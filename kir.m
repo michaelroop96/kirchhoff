@@ -1,0 +1,9 @@
+function [a,b,c]=kir(N)
+a = rand(N,1);
+a(2) = a(1);
+c11 = rand(1);
+c22 = c11;
+b11 = rand(1);
+b22 = b11;
+b = diag([b11,b22,rand(1)]);
+c = diag([c11,c22,rand(1)]);
